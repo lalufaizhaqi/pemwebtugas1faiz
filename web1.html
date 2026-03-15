@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukarno - Biograph</title>
+    <style>
+        body {
+            font-family: 'Linux Libertine', 'Georgia', Times, serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            color: #202122;
+        }
+
+        #login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f6f6f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            border: 1px solid #a2a9b1;
+            text-align: center;
+            width: 320px;
+        }
+
+        .bio-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        input {
+            display: block;
+            margin: 12px auto;
+            padding: 8px;
+            width: 90%;
+            border: 1px solid #a2a9b1;
+        }
+
+        button {
+            background-color: #3366cc;
+            color: white;
+            border: 1px solid #3366cc;
+            padding: 10px 30px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #main-content {
+            display: none;
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            border-left: 1px solid #a2a9b1;
+            border-right: 1px solid #a2a9b1;
+            line-height: 1.6;
+        }
+
+        h1 { border-bottom: 1px solid #a2a9b1; font-size: 2.5em; margin-bottom: 5px; }
+        h2 { border-bottom: 1px solid #a2a9b1; margin-top: 30px; }
+        
+        .infobox {
+            float: right;
+            width: 270px;
+            border: 1px solid #a2a9b1;
+            background: #f8f9fa;
+            padding: 5px;
+            margin-left: 20px;
+            font-size: 0.88em;
+        }
+
+        .infobox th { background: #cedff2; text-align: center; padding: 5px; }
+        .infobox img { width: 100%; height: auto; }
+        
+        table.wives-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table.wives-table th, table.wives-table td {
+            border: 1px solid #a2a9b1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table.wives-table th { background-color: #f8f9fa; }
+
+        .citation { color: #0645ad; font-size: 0.8em; vertical-align: super; }
+        
+        footer {
+            font-size: 0.75em;
+            color: #54595d;
+            margin-top: 50px;
+            border-top: 1px solid #a2a9b1;
+            padding-top: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="login-overlay">
+    <div class="login-box">
+        <span class="bio-logo">BIOGRAPHIDN</span>
+        <p>Please log in to view historical archives.</p>
+        
+        <input type="text" id="Username" placeholder="Username">
+        <input type="password" id="Password" placeholder="Password">
+        
+        <button onclick="login()">Log In</button>
+    </div>
+    </div>
+
+    <div id="main-content">
+        <h1>Soekarno AKA King of Karbit</h1>
+        <p>From Wikipedia, the free encyclopedia</p>
+        
+        <div class="infobox">
+            <table>
+                <tr><th colspan="2">Soekarno</th></tr>
+                <tr><td colspan="2" style="text-align:center"><img src="sukarno.JPG" alt="Sukarno"></td></tr>
+                <tr><td colspan="2" style="background:#cedff2; font-weight:bold; text-align:center">1st President of Indonesia</td></tr>
+                <tr><td><b>In office:</b></td><td>18 Aug 1945 – 12 Mar 1967</td></tr>
+                <tr><td><b>Born:</b></td><td>6 June 1901<br>Surabaya, Dutch East Indies</td></tr>
+                <tr><td><b>Died:</b></td><td>21 June 1970 (aged 69)<br>Jakarta, Indonesia</td></tr>
+            </table>
+        </div>
+
+        <p><b>Soekarno</b>
+    (born <b>Kusno Sosrodihardjo</b>)
+    was the first president of Indonesia, serving from 1945 to 1967. He was the leader of the Indonesian struggle for independence from the Dutch Empire and a prominent figure in the
+    <a href="https://en.wikipedia.org/wiki/Non-Aligned_Movement" target="_blank" style="color:#0645ad">Non-Aligned Movement</a>.</p>
+        <hr>
+
+        <h2>Early Life</h2>
+        <p>Soekarno was born to a Javanese schoolteacher and his Balinese wife. He was originally named Kusno, but following a series of illnesses, his parents renamed him Sukarno after a figure in the Mahabharata.<br>
+        He was educated at the 
+        <a href="https://id.wikipedia.org/wiki/Institut_Teknologi_Bandung" target="_blank">
+        <i>Technische Hoogeschool te Bandoeng (now ITB)</i>
+        </a>
+        </p>
+
+        <h2>Political Career</h2>
+        <p>Soekarno rose to prominence as a leader of the nationalist movement. He spent years in Dutch custody, including exile in Flores and Bengkulu.</p>
+        
+        <h3><a href="https://id.wikipedia.org/wiki/Proklamasi_Kemerdekaan_Indonesia" target="_blank" style="text-decoration: none; color: inherit;">
+        Proclamation of Independence</a></h3>
+        <p>On 17 August 1945, Sukarno and Mohammad Hatta declared the independence of the Republic of Indonesia.</p>
+
+        <h3>Guided Democracy</h3>
+        <p>In the late 1950s, Sukarno established a system known as "Guided Democracy" to bring stability to the country.</p>
+
+        <h3><a href="https://en.wikipedia.org/wiki/Bandung_Conference" target="_blank" style="text-decoration: none; color: inherit;">
+        The Bandung Conference</a></h3>
+        <p>He hosted the 1955 Asian-African Conference, which led to the creation of the Non-Aligned Movement.</p>
+
+        <h3>Legacy</h3>
+        <p>To this day, he is remembered as <i>Bung Karno</i>, the "Great Leader of the Revolution."</p>
+
+        <h2>Family Life</h2>
+        <p>Soekarno was known for his charismatic personality and his many marriages, which were often subjects of political and social discussion.</p>
+        
+        <h3>List of Wives</h3>
+        <p>Below is a table detailing the marriages of President Sukarno:</p>
+
+        <table class="wives-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Marriage Year</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Siti_Oetari" target="_blank" style="color:#0645ad">Siti Oetari</a></td>
+                    <td>1921–1923</td>
+                    <td>Daughter of H.O.S. Tjokroaminoto.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Inggit_Garnasih" target="_blank" style="color:#0645ad">Inggit Garnasih</a></td>
+                    <td>1923–1943</td>
+                    <td>Accompanied him through his early exile.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Fatmawati" target="_blank" style="color:#0645ad">Fatmawati</a></td>
+                    <td>1943–1956</td>
+                    <td>First Lady; sewed the first Indonesian flag.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Hartini" target="_blank" style="color:#0645ad">Hartini</a></td>
+                    <td>1953–1970</td>
+                    <td>Met in Salatiga.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Kartini_Manoppo" target="_blank" style="color:#0645ad">Kartini Manoppo</a></td>
+                    <td>1959–1968</td>
+                    <td>Former Garuda Indonesia flight attendant.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Ratna_Sari_Dewi_Soekarno" target="_blank" style="color:#0645ad">Naoko Nemoto (Ratna Sari Dewi)</a></td>
+                    <td>1962–1970</td>
+                    <td>Of Japanese origin.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Haryati" target="_blank" style="color:#0645ad">Haryati</a></td>
+                    <td>1963–1966</td>
+                    <td>Former dancer at the State Palace.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Yurike_Sanger" target="_blank" style="color:#0645ad">Yurike Sanger</a></td>
+                    <td>1964–1968</td>
+                    <td>Member of the Bhinneka Tunggal Ika student choir.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="https://id.wikipedia.org/wiki/Heldy_Djafar" target="_blank" style="color:#0645ad">Heldy Djafar</a></td>
+                    <td>1966–1969</td>
+                    <td>His final marriage.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>bung get some help</h2>
+        <footer>
+            This page was written by faiz.
+        </footer>
+    </div>
+
+    <script>
+        function login() {
+        var user = document.getElementById('Username').value;
+        var pass = document.getElementById('Password').value;
+        var validUser = "1";
+        var validPass = "12";
+
+        
+        if (user === validUser && pass === validPass) {
+        
+            document.getElementById('login-overlay').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        } else {
+            alert("Username atau Password salah! Silakan coba lagi.");
+        } }
+        </script>
+
+</body>
+</html>
